@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phil Dayboch Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <header class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-8 text-center">
+    <h1 class="text-4xl font-bold">Dayboch Software</h1>
+    <p class="mt-2 text-lg">Building helpful selfhosted software</p>
+  </header>
+
+  <main class="p-6">
+    <!-- Projects Section -->
+    <section id="projects" class="my-8">
+      <h2 class="text-3xl font-semibold text-center mb-6">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1: Tincan -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden p-4 flex items-center">
+          <!-- Logo Section -->
+          <div class="flex-shrink-0">
+            <img src="public/tincan-logo.png" alt="Tincan Logo" class="w-16 h-16 rounded-full">
+          </div>
+          <!-- Content Section -->
+          <div class="ml-4">
+            <h3 class="text-xl font-bold">Tincan</h3>
+            <p class="text-gray-600 mt-2">
+              Tincan is a financial aggregation tool that connects to your credit card, bank, and investment accounts to
+              provide a unified view of your spending habits. Transactions are automatically categorized using AI, or
+              you
+              can define custom categorization rules. For added flexibility, Tincan also supports manual uploads of
+              statements in PDF or CSV format, parsing transactions for seamless analysis. Gain insights into your
+              financial
+              trends and allocate your money wisely with Tincan.
+            </p>
+            <a href="https://github.com/pdayboch/tincan-deploy"
+              class="text-blue-500 font-semibold mt-4 block hover:underline">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden p-4 flex items-center">
+          <div class="flex-shrink-0">
+            <img src="public/gdrive-diff-and-sync-logo.png" alt="Google Drive Diff & Sync Logo"
+              class="w-16 h-16 rounded-full">
+          </div>
+          <div class="ml-4">
+            <h3 class="text-xl font-bold">Google Drive Diff & Sync</h3>
+            <p class="text-gray-600 mt-2">
+              Google Drive Diff & Sync checks the sync state between a Google Drive root folder and a local disk folder.
+              It
+              identifies files and folders present in one location but missing in the other, ensuring no data is
+              overlooked. You
+              can configure exclusions using an <code>unsynced_list.yaml</code> file and optionally download unsynced
+              files from
+              Google Drive using the <code>-l</code> flag. Automatic syncing from local to Google Drive is not currently
+              supported.
+            </p>
+            <a href="https://github.com/pdayboch/google-drive-diff-and-sync"
+              class="text-blue-500 font-semibold mt-4 block hover:underline">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 py-8 rounded-lg">
+      <h2 class="text-3xl font-semibold text-center mb-6">Contact</h2>
+      <div class="text-center">
+        <p class="text-lg">Email: <a href="mailto:software@dayboch.com"
+            class="text-blue-500 hover:underline">software@dayboch.com</a></p>
+        <p class="text-lg mt-2">GitHub: <a href="https://github.com/pdayboch" target="_blank"
+            class="text-blue-500 hover:underline">github.com/pdayboch</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    <p>&copy; 2025 Philip Dayboch. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
